@@ -47,7 +47,7 @@ public class StudentManager {
                 gender = "女";
             }
             System.out.println(student.getID() + " " + student.getName() + " " +
-                    simpleDateFormat.parse(student.getBirDate().toString()) + " " + gender);
+                    simpleDateFormat.format(simpleDateFormat.parse(student.getBirDate())) + " " + gender);
         }
         return students;
     }
@@ -142,8 +142,8 @@ public class StudentManager {
                 int flag = 0;
                 while(flag == 0){
                     try {
-                        date = simpleDateFormat.parse(input.nextLine()).toString();
-                        System.out.println(date);
+                        date = simpleDateFormat.format(simpleDateFormat.parse(input.nextLine()));
+
                         flag = 1;
                     }catch (ParseException e){
                         System.out.println("注意您的输入格式！");
@@ -189,7 +189,7 @@ public class StudentManager {
                 int flag = 0;
                 while(flag == 0){
                     try {
-                        date = simpleDateFormat.parse(input.nextLine()).toString();
+                        date = simpleDateFormat.format(simpleDateFormat.parse(input.nextLine()));
                         flag = 1;
                     }catch (ParseException e){
                         System.out.println("注意您的输入格式！");
