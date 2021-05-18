@@ -3,7 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="44f6ea78-80af-40e6-a5aa-9dfd10dd3e8b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Work1/com/company/work1/Main$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Work1/com/company/work1/Main$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Work1/com/company/work1/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Work1/com/company/work1/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Work1/com/company/work1/Main$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Work1/com/company/work1/Main$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Work1/com/company/work1/Main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Work1/com/company/work1/Main$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Work1/com/company/work1/Main$3$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Work1/com/company/work1/Main$3$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Work1/com/company/work1/Main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Work1/com/company/work1/Main$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Work1/com/company/work1/Main$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Work1/com/company/work1/Main$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Work1/com/company/work1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Work1/com/company/work1/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Work1/com/company/work1/StudentManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Work1/com/company/work1/StudentManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/work1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/work1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/work1/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/work1/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/work1/StudentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/work1/StudentManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +52,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -95,7 +106,9 @@
       <workItem from="1618988182329" duration="4676000" />
       <workItem from="1619153689852" duration="7249000" />
       <workItem from="1619312319467" duration="618000" />
-      <workItem from="1619328544015" duration="12979000" />
+      <workItem from="1619328544015" duration="18048000" />
+      <workItem from="1621218347230" duration="1791000" />
+      <workItem from="1621299481674" duration="3119000" />
     </task>
     <servers />
   </component>
@@ -107,22 +120,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1619157169072" />
-    <state width="1537" height="274" key="GridCell.Tab.0.bottom" timestamp="1619361381375">
+    <state width="1537" height="88" key="GridCell.Tab.0.bottom" timestamp="1619403474195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1537" height="274" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1619361381375" />
-    <state width="1537" height="274" key="GridCell.Tab.0.center" timestamp="1619361381375">
+    <state width="1537" height="88" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1619403474195" />
+    <state width="1537" height="88" key="GridCell.Tab.0.center" timestamp="1619403474195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1537" height="274" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1619361381375" />
-    <state width="1537" height="274" key="GridCell.Tab.0.left" timestamp="1619361381375">
+    <state width="1537" height="88" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1619403474195" />
+    <state width="1537" height="88" key="GridCell.Tab.0.left" timestamp="1619403474194">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1537" height="274" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1619361381375" />
-    <state width="1537" height="274" key="GridCell.Tab.0.right" timestamp="1619361381375">
+    <state width="1537" height="88" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1619403474194" />
+    <state width="1537" height="88" key="GridCell.Tab.0.right" timestamp="1619403474195">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1537" height="274" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1619361381375" />
+    <state width="1537" height="88" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1619403474195" />
     <state width="1537" height="270" key="GridCell.Tab.1.bottom" timestamp="1619160948245">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -147,9 +160,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1619158803976" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1619339645322">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1621221137606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1619339645322" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1621221137606" />
   </component>
 </project>

@@ -5,20 +5,19 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.SimpleDateFormat;
-import static com.company.work1.StudentManager.students;
+import static com.company.work1.StudentManager.STUDENTS;
 
 public class Main extends JFrame{
 
-    SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd");
-
-    StudentManager studentManager = new StudentManager();
-
+    /*类型1：全局变量应该全大写，错误代码1*/
+    //SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd");
+    //StudentManager studentManager = new StudentManager();
+    StudentManager STUDENT_MANAGER = new StudentManager();
     public Main(){
-        setLayout(new GridLayout(6,1));
+        setLayout(new GridLayout(5,1));
         setTitle("stu info");
         setBounds(100,0,450,450);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        setVisible(true);
         JLabel jLabel = new JLabel();
         JButton button1 = new JButton("插入");
         JButton button2 = new JButton("查找");
@@ -29,6 +28,8 @@ public class Main extends JFrame{
         add(button2);
         add(button3);
         add(button4);
+        setVisible(true);
+
         button1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -67,13 +68,14 @@ public class Main extends JFrame{
                         }else {
                             student.setGender(false);
                         }
-                        System.out.println(studentManager.AddStudent(student.getID(),student.getName(),
+                        System.out.println(STUDENT_MANAGER.addStudent(student.getID(),student.getName(),
                                 student.getBirDate(),student.getGender()));
                         frame.dispose();
                     }
                 });
             }
         });
+
         button2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -90,24 +92,31 @@ public class Main extends JFrame{
                     public void actionPerformed(ActionEvent actionEvent) {
                         frame.dispose();
                         String name = name1.getText();
-                        Student st = studentManager.QueryStudent(name);
+                        Student st = STUDENT_MANAGER.queryStudent(name);
                         JFrame frame = new JFrame();
                         frame.setTitle("这是您查找的学生的信息");
                         frame.setLayout(new GridLayout(1,1));
                         frame.setBounds(100,0,700,100);
                         frame.setVisible(true);
-                        String out = "ID                    姓名             出生日期            性别\n";
+                        String out = "您查找的学生信息：\nID                    姓名       出生日期       性别\n";
                         if(st.getName().equals("NOT FOUND")){
                             out = "没有这个学生哦！";
                         }else {
+                            String gender;
+                            if(st.getGender()){
+                                gender = "男";
+                            }else {
+                                gender = "女";
+                            }
                             out = out + st.getID() + "   " +st.getName() + "   "+
-                                    st.getBirDate() + "   " +st.getGender()+"\n";
+                                    st.getBirDate() + "       " +gender+"\n";
                         }
                         frame.add(new TextArea(out));
                     }
                 });
             }
         });
+
         button3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -129,7 +138,7 @@ public class Main extends JFrame{
                         frame1.setVisible(true);
                         String name = name1.getText();
                         JLabel jLabel1 = new JLabel();
-                        if(studentManager.DeleteStudent(name))
+                        if(STUDENT_MANAGER.deleteStudent(name))
                             jLabel1.setText("成功了！");
                         else jLabel1.setText("没有这个人！");
                         frame1.add(jLabel1);
@@ -137,6 +146,7 @@ public class Main extends JFrame{
                 });
             }
         });
+
         button4.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent){
@@ -145,11 +155,17 @@ public class Main extends JFrame{
                 frame.setLayout(new GridLayout(1,1));
                 frame.setBounds(100,0,700,200);
                 frame.setVisible(true);
-                studentManager.SortByID(students);
-                String out = "ID                    姓名           出生日期          性别\n";
-                for (Student value:students){
+                STUDENT_MANAGER.sortByID(STUDENTS);
+                String out = "ID                    姓名       出生日期       性别\n";
+                for (Student value:STUDENTS){
+                    String gender;
+                    if (value.getGender()){
+                        gender = "男";
+                    }else {
+                        gender = "女";
+                    }
                     out = out + value.getID() + "   " +value.getName() + "   "+
-                            value.getBirDate() + "   " +value.getGender()+"\n";
+                            value.getBirDate() + "       " +gender+"\n";
                 }
                 frame.add(new TextArea(out));
             }
